@@ -1,0 +1,125 @@
+table {
+    border: 2px solid black;
+    width: 50%;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+td, th{
+    vertical-align: center;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.center {
+    text-align: center;
+}
+
+.link{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.link a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    transition: 200ms;
+    margin: 0;
+}
+
+.link a:hover {
+    background-color: rgb(124, 6, 118);
+    color: white;
+  }
+
+.alinhar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;  
+}
+
+.card{
+    display: flex;
+    width: 35%;
+    height: 300px;
+}
+
+.card img {
+    max-width: 300px;
+    max-height: 300px;
+    margin-right: 10px;
+}
+
+header, footer{
+    background-color: rgb(204, 55, 204); 
+    color: white;  
+}
+
+body, h1, h2, p, ul, li, main { 
+    margin: 0;      
+    padding: 0; 
+}
+
+aside{
+    width: 20%;
+    display: block;
+}
+
+form{
+    width: 50vh;    
+    margin: auto;
+}
+
+input[type=text], input[type=email], textarea, select{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+button[type=submit]{
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type=submit]:hover{
+    background-color: #45a049;
+}
+
+.right{
+    display: flex;
+    justify-content: right;
+}
+
+aside{
+    padding: 10px;
+    width: 250px;
+}
+
+.row{
+    display: flex;
+}
+
+.side{    
+    flex: 1;
+    border-left: 1px solid black;
+}
+
+.middle{
+    flex: 6;
+}
