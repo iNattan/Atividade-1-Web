@@ -14,15 +14,15 @@
             <img src=".\Evento.jpg" alt="Foto do evento">
         </div>
         <nav class="link">
-            <a href="#">Descrição</a>
-            <a href="#">Palestrantes</a>
-            <a href="#">Programação</a>
-            <a href="#">Inscrição</a>
+            <a href="#descricao">Descrição</a>
+            <a href="#palestrantes">Palestrantes</a>
+            <a href="#programacao">Programação</a>
+            <a href="#inscricao">Inscrição</a>
         </nav>
     </header>   
     <main class="row">      
         <div class="middle">    
-            <section>
+            <section id="descricao">
                 <article class="center">
                     <h2><i>Descrição</i></h2>
                     <br>
@@ -32,7 +32,7 @@
                 </article>
             </section>
             <br>
-            <section>
+            <section id="palestrantes">
                 <h2 class="center"><i>Palestrantes</i></h2>
                 <div class="alinhar">
                     <fieldset class="card">
@@ -53,7 +53,7 @@
                 <br>
             </section>
             <br>
-            <section>
+            <section id="programacao">
                 <table>
                     <caption><b>Tabela do Evento</b></caption>
                     <tr>
@@ -79,14 +79,14 @@
                 </table>
             </section>  
             <br>
-            <section>            
-                <form>
+            <section id="inscricao">            
+                <form id="meuForm">
                     <h2 class="center"><i>Inscrição</i></h2>
                     <label for="nome">Nome Completo</label>
-                    <input id="nome" required type="text">  
+                    <input required type="text">  
                     <br>  
                     <label for="email">Email</label>
-                    <input id="email" required type="email"> 
+                    <input required type="email"> 
                     <br>  
                     <label for="tipo">Tipo de Ingresso</label>
                     <select id="tipo" required> 
@@ -99,9 +99,14 @@
                     <textarea id="obs" cols="30" rows="2"></textarea>
                     <br>
                     <label for="evento" required>Como ficou sabendo do evento?</label>
-                    <input id="evento" name="evento" type="radio"> Redes
-                    <input id="evento" name="evento" type="radio"> Email
-                    <input id="evento" name="evento" type="radio"> Indicação 
+                    <input name="evento" type="radio" onclick="alternaCampoOutro()"> Redes
+                    <input name="evento" type="radio" onclick="alternaCampoOutro()"> Email
+                    <input name="evento" type="radio" onclick="alternaCampoOutro()"> Indicação
+                    <input id="outroOpcao" name="evento" type="radio" onclick="alternaCampoOutro()"> Outro
+                    <div id="outroCampo" class="visibleFalse">
+                        <label for="outro">Como:</label>
+                        <input name="outro" type="text">
+                    </div>
                     <br>
                     <label for="att">Deseja receber atualizações por email?</label>
                     <input type="checkbox">Sim
@@ -138,5 +143,6 @@
             <a href="#">Telegram</a>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

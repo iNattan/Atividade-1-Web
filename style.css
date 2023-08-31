@@ -123,3 +123,7 @@ aside{
 .middle{
     flex: 6;
 }
+
+.visibleFalse{
+    display: none;
+}
