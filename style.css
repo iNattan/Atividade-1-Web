@@ -89,7 +89,7 @@ input[type=text], input[type=email], textarea, select{
 }
 
 button[type=submit]{
-    background-color: #04AA6D;
+    background-color: rgb(204, 55, 204);
     color: white;
     padding: 12px 20px;
     border: none;
@@ -98,7 +98,7 @@ button[type=submit]{
 }
 
 button[type=submit]:hover{
-    background-color: #45a049;
+    background-color: rgb(124, 6, 118);
 }
 
 .right{
@@ -126,4 +126,25 @@ aside{
 
 .visibleFalse{
     display: none;
+}
+
+.popupFundo{
+    display: none;
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.popup{
+    background-color: white;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    margin: 10% auto;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: px;
 }

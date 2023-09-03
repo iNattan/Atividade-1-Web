@@ -14,10 +14,10 @@
             <img src=".\Evento.jpg" alt="Foto do evento">
         </div>
         <nav class="link">
-            <a href="#descricao">Descrição</a>
-            <a href="#palestrantes">Palestrantes</a>
-            <a href="#programacao">Programação</a>
-            <a href="#inscricao">Inscrição</a>
+            <a onclick="rolarAte('descricao')">Descrição</a>
+            <a onclick="rolarAte('palestrantes')">Palestrantes</a>
+            <a onclick="rolarAte('programacao')">Programação</a>
+            <a onclick="rolarAte('inscricao')">Inscrição</a>
         </nav>
     </header>   
     <main class="row">      
@@ -42,6 +42,17 @@
                                 <p>Formado em nada, com conhecimento nulo que irá palestrar sobre a vida!</p>                    
                             </article>
                     </fieldset>
+                    <div class="popupFundo">
+                        <div class="popup">                           
+                            <h3>Natan Martins Rodrigues</h3>   
+                            <p> 
+                                Natan é um palestrante que se destaca por sua rica experiência de vida. Com um conhecimento abrangente que abrange desde os primórdios 
+                                da humanidade até o ciclo completo da existência, ele é verdadeiramente um mestre da sabedoria. Sua palestra promete uma jornada fascinante, 
+                                explorando os temas mais amplos da existência, desde os primórdios da civilização até os desafios e as complexidades da vida moderna, 
+                                culminando na reflexão sobre o ciclo da vida e sua conclusão. Prepare-se para uma experiência enriquecedora e perspicaz com Natan como seu guia.
+                            </p>                        
+                        </div>                        
+                    </div>
                     <fieldset class="card">
                         <legend><h3><u>Billy</u></h3></legend>
                             <img src="Billy.jpg" alt="Foto do Billy">
@@ -49,6 +60,17 @@
                                 <p>Dominador do ar, conhecedor de todas as coisas, último espírito sobrevoante na Terra. Irá palestrar sobre cacátuas no estado fértil delas!</p>
                             </article>
                     </fieldset>
+                    <div class="popupFundo">
+                        <div class="popup">
+                            <h3>João Victor Garcia e Silva</h3>  
+                            <p>
+                                Sua aura de mistério e conhecimento aparentemente ilimitado o torna uma figura fascinante e cativante para qualquer audiência. 
+                                No entanto, sua palestra se concentrará em um tópico específico e inesperado: as cacátuas no estado fértil delas. 
+                                Esse tópico incomum, junto com a personalidade enigmática do palestrante, promete uma experiência única e intrigante 
+                                para aqueles que assistirem à sua palestra.
+                            </p>                        
+                        </div>                        
+                    </div>
                 </div>
                 <br>
             </section>
@@ -99,6 +121,7 @@
                     <textarea id="obs" cols="30" rows="2"></textarea>
                     <br>
                     <label for="evento" required>Como ficou sabendo do evento?</label>
+                    <br>
                     <input name="evento" type="radio" onclick="alternaCampoOutro()"> Redes
                     <input name="evento" type="radio" onclick="alternaCampoOutro()"> Email
                     <input name="evento" type="radio" onclick="alternaCampoOutro()"> Indicação
